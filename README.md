@@ -54,7 +54,7 @@ dir = "/home/eiger/CMU/2025_Fall"
 
 [[windows]]
 name = "blog"
-dir = "\${BLOG_HOME}"
+dir = "${BLOG_HOME}"
   [[windows.actions]]
   type = "send"
   text = "nv ."
