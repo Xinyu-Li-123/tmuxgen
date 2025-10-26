@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmuxgen"
+version = "0.1.0"
+description = "Generate Bash tmux setup scripts from TOML configuration files"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "eiger", email = "your.email@example.com"}
+]
+keywords = ["tmux", "workspace", "automation", "terminal", "session-manager"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Shells",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+tmuxgen = "tmuxgen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/tmuxgen"
+Repository = "https://github.com/yourusername/tmuxgen"
+Issues = "https://github.com/yourusername/tmuxgen/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tmuxgen*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
