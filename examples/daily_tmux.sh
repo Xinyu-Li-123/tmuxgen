@@ -13,7 +13,7 @@ tmux new-session -d -s my_session -c /home/eiger/workspace -n nv-ws
 tmux send-keys -t my_session:nv-ws -l 'nv .'
 tmux send-keys -t my_session:nv-ws Enter
 sleep 0.080
-tmux send-keys -t my_session:nv-ws Space e Space q s
+tmux send-keys -t my_session:nv-ws Space e Space q s Space e
 
 # Create window: ws
 tmux new-window -t my_session -c /home/eiger/workspace -n ws
